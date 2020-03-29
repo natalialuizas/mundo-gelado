@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/8c100b4e25.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito|Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -72,41 +73,42 @@
     <section class="contact">
         <img src="assets/img/icone-localizacao.png" alt="Icone de uma aviao" class="contact__icon">
         <h3 class="contact__title">Aonde estamos</h3>
-        <p contact="contact_paragraph">Avenida Paulista, 1450 - Sao Paulo, SP</p>
+        <p class="contact__paragraph">Avenida Paulista, 1450 - Sao Paulo, SP</p>
 
-        <h4 class="contact__title">Fale com a gente</h4>
-
+        <h4 class="contact__title__form">Fale com a gente</h4>
+       <div class="contact__form">
         <label for="name">Nome completo</label>
         <input type="text" name="name" placeholder="Fulano de Tal">
-        <label for="email">Nome completo</label>
+        <label for="email">Email</label>
         <input type="email" name="email" placeholder="fulano@gmail.com">
-        <label for="phone">Nome completo</label>
+        <label for="phone">Telefone</label>
         <input type="text" name="phone" placeholder="11 87589-8764">
         <label for="message">Mensagem</label>
-        <textarea name="message" cols="30" rows="10"></textarea>
-        <button type="submit" class="btn">Enviar</button>
-        <section>
-            <footer class="footer">
-                <a href="tel:111234-5678">Telefone: (11) 1234-5678</a>
-                <ul class="footer__mediasocial">
-                    <li>
-                        <a href="https://twitter.com" target="_blank" class="footer__twitter">
-                            <img src="assets/img/twitter.png" alt="Logotipo twitter">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://facebook.com" target="_blank" class="footer__facebook">
-                            <img src="assets/img/facebook.png" alt="Logotipo facebook">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://youtube.com" target="_blank" class="footer__youtube">
-                            <img src="assets/img/youtube.png" alt="Logotipo Youtube">
-                        </a>
-                    </li>
-                </ul>
-                <p>Copyright © Agência Mundo gelado 2020</p>
-            </footer>
+        <textarea name="message" cols="50" rows="50" placeholder="oi!"></textarea>
+      </div>
+        <button type="submit" class="btn contact__btn--enviar">Enviar</button>
+    </section>
+    <footer class="footer">
+        <a href="tel:111234-5678" class="footer__number">Telefone: (11) 1234-5678</a>
+        <ul class="footer__mediasocial">
+            <li>
+                <a href="https://twitter.com" target="_blank" class="footer__twitter">
+                    <img src="assets/img/twitter.png" alt="Logotipo twitter">
+                </a>
+            </li>
+            <li>
+                <a href="https://facebook.com" target="_blank" class="footer__facebook">
+                    <img src="assets/img/facebook.png" alt="Logotipo facebook">
+                </a>
+            </li>
+            <li>
+                <a href="https://youtube.com" target="_blank" class="footer__youtube">
+                    <img src="assets/img/youtube.png" alt="Logotipo Youtube">
+                </a>
+            </li>
+        </ul>
+        <p>Copyright © Agência Mundo gelado 2020</p>
+    </footer>
 </body>
 
 </html>
