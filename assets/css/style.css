@@ -211,7 +211,7 @@ ul li {
     border: none;
     border-bottom: 1px solid #FFF;
     padding: 20px 0;
-    width: 90%;
+    width: 100%;
     font-size: 1.2rem;
     font-weight: 600;
     color:#A7A8A9; 
@@ -221,7 +221,7 @@ ul li {
     background: transparent;
     border: none;
     border-bottom: 1px solid #fff;
-    width: 90%;
+    width: 100%;
     padding: 20px 0;
     font-size: 1.2rem;
     font-weight: 600;
