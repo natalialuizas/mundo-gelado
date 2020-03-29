@@ -194,7 +194,7 @@ ul li {
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .contact__form label {
