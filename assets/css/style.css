@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Nunito', 'Varela Round', sans-serif;
     font-size: 10px;
@@ -62,7 +66,7 @@ ul li {
 
 .text__subtitle{
     text-align: center;
-    color:#bbb8b8;
+    color: rgba(255, 255, 255, .7);
     font-size: 1rem;
     font-weight: bold;
     padding: 0 50px 20px 30px;
@@ -84,6 +88,10 @@ ul li {
     font-weight: bold;
     padding: 20px 25px;
     letter-spacing: 0.2rem;
+}
+
+.btn__primary:hover {
+    background-color: #36B0E0;
 }
 
 
@@ -119,6 +127,12 @@ ul li {
     justify-content: center;
     align-items: center;
     margin: 0 12px;
+    /* width: 100%; */
+    max-width: 960px;
+ }
+
+ .destination__border {
+     display: none;
  }
 
  .destination--groenlandia__img, .destination--antartida__img, .destination--siberia__img {
@@ -153,7 +167,7 @@ ul li {
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
-    height: 1200px;
+    height: 1100px;
     margin-top: 100px;
     display: flex;
     align-items: center;
@@ -185,6 +199,10 @@ ul li {
     color: #20252A;
  }
 
+ .contact__maps {
+     display: none;
+ }
+
  .contact__title__form {
     padding: 20px 0 10px;
 }
@@ -211,21 +229,22 @@ ul li {
     border: none;
     border-bottom: 1px solid #FFF;
     padding: 20px 0;
-    width: 95%;
+    width: 100%;
     font-size: 1.2rem;
     font-weight: 600;
-    color:#A7A8A9; 
+    color:rgb(0, 0, 0); 
  }
 
  .contact__form textarea {
     background: transparent;
     border: none;
     border-bottom: 1px solid #fff;
-    width: 95%;
+    width: 100%;
     padding: 20px 0;
     font-size: 1.2rem;
     font-weight: 600;
     height: 150px;
+    color:rgb(0, 0, 0); 
  }
 
 .contact__btn--enviar {
@@ -237,12 +256,16 @@ ul li {
     margin: 40px;
 }
 
+.contact__btn--enviar:hover {
+    background-color: #36B0E0;
+}
+
 .footer {
     background-color:#161616;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
 }
 
 .footer__number {
@@ -268,5 +291,124 @@ ul li {
     color: #8e8a8a;
     font-size: 0.8rem;
     font-weight: bold;
-    margin: 30px 0 50px 0;
+    margin: 30px 0;
+}
+
+@media screen and (min-width:768px){
+
+    .nav {
+        background-color: #96B6CA;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 85px;
+        padding: 0 10%;
+        position: fixed;
+        z-index: 999;
+    }
+    .menu__hambuguer {
+        display: none;
+    }
+    .menu {
+        display: flex;
+
+    }
+    .menu__item{
+       padding: 0 10px;
+    }
+
+    .menu__item__link {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    padding: 0 1rem;
+    }
+
+    .text__title{
+        line-height: 5rem;
+        font-size: 4rem;
+    }
+    .text__subtitle, .agency__paragraph {
+        font-size: 1.2rem;
+    }
+
+    main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    }
+
+    .destination {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .destination__desktop {
+    display: flex;
+    flex-direction: column;
+    }
+   
+    .destination__paragraph{
+       padding: 0;
+       text-align: left;
+    }
+
+    .destination--siberia__img {
+        width: 50%;
+        height: auto;
+        display: block;
+        margin-bottom: 50px;
+    }
+    .destination__border {
+        width: 10px;
+        height: 154px;
+        background-color: #829dad;
+        display: block;
+    }
+
+    .destination--antartida__img, .destination--groenlandia__img  {
+        width: 50%;
+        height: 50%;
+    }
+
+    .destination--antartida {
+     display: flex;
+     flex-direction: row-reverse;
+     text-align: right;
+    }
+    
+    .destination_paragraph--antartida{
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .contact{
+        height: 1600px;
+    }
+
+    .contact__paragraph {
+        display: none;
+    }
+
+    .contact__maps {
+        margin: 30px;
+        display: block;
+    }
+    
+}
+
+
+@media screen and (min-width:1280px){
+    .text__title{
+        line-height: 5rem;
+        font-size: 6rem;
+    }
+
+    .destination--siberia__img {
+        max-width: 740px;
+        width: 100%;
+    }
 }
