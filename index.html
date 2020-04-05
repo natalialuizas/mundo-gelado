@@ -19,13 +19,13 @@
         <nav class="nav">
             <ul class="menu">
                 <li class="menu__item">
-                    <a href="#" class="menu__item__link"></a>
+                    <a href="#agency" class="menu__item__link">Sobre</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__item__link"></a>
+                    <a href="#destination" class="menu__item__link">Destinos</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__item__link"></a>
+                    <a href="#contact" class="menu__item__link">Contato</a>
                 </li>
             </ul>
             <div class="menu__hambuguer">
@@ -36,43 +36,52 @@
     <section class="box__principal">
         <h1 class="text__title">Mundo Gelado</h1>
         <p class="text__subtitle">A agência de viagens que te leva aos lugares mais congelantes do planeta.</p>
-        <a href="#" class="btn btn__primary">Quero saber mais</a>
+        <a href="#agency" class="btn btn__primary">Quero saber mais</a>
     </section>
-    <main>
-        <section class="agency">
-            <h2 class="agency__title">A agência Mundo
-                <br> gelado</h2>
+        <section class="agency" id="agency" >
+            <h2 class="agency__title" id="#agency">A agência Mundo gelado</h2>
             <p class="agency__paragraph">Nosso diferencial é te levar para conhecer as mais lindas e geladas paisagens
                 <br> no nosso planeta, com conforto e segurança.
                 <br> Nossos pacotes são completos e oferecem uma experiência inesquecível para você.
                 <br> Veja abaixo nossos destinos disponíveis, e se tiver alguma dúvida ou sugestão,
                 <br> entre em contato com a gente.</p>
         </section>
-        <section class="destination destination--siberia">
+        <main>
+        <section class="destination destination--siberia" id="destination">
             <img src="assets/img/siberia.jpg" alt="Foto de duas meninas de maio na siberia" class="destination--siberia__img">
+            <span class="destination__border"></span>
+            <!-- <div class="destination__desktop"> -->
             <h3 class="destination__title">Sibéria</h3>
             <p class="destination__paragraph">O clima varia entre o clima polar e o clima continental. Na Sibéria situa-se o local habitado mais frio do mundo,
                 a aldeia de Oymyakon.</p>
+            <!-- </div> -->
         </section>
         <section class="destination destination--groenlandia">
-            <img src="assets/img/groenlandia.jpg" alt="Foto de duas meninas de maio na groenlandia" class="destination--groenlandia__img">
+            <img src="assets/img/groenlandia.jpg" alt="Foto de homem entrando no rio" class="destination--groenlandia__img">
+            <!-- <div class="destination__desktop"> -->
             <h3 class="destination__title">Groenlândia</h3>
             <p class="destination__paragraph destination_paragraph--groenlandia">A Groenlândia é a maior ilha do mundo e tem mais de 44 000 km de linha de costa. A população é escassa, confinada
                 a pequenos povoados na costa. A ilha tem a segunda maior reserva de gelo do mundo, apenas ultrapassada pela
                 Antártida.
             </p>
+        <!-- </div> -->
         </section>
         <section class="destination destination--antartida">
-            <img src="assets/img/antartida.jpg" alt="Foto de duas meninas de maio na antartida" class="destination--antartida__img">
+            <img src="assets/img/antartida.jpg" alt="Foto de homem nandando" class="destination--antartida__img">
+            <!-- <div class="destination__desktop"> -->
             <h3 class="destination__title">Antártida</h3>
             <p class="destination__paragraph destination_paragraph--antartida">É o continente mais frio, mais seco, com a maior média de altitude e de maior índice de ventos fortes do planeta.[1]
                 A temperatura mais baixa da Terra (-89,2 °C) foi registrada na Antártica, sendo a temperatura média na costa,
                 durante o verão, de -10 °C; no interior do continente, é de -40 °C.</p>
+            <!-- </div> -->
         </section>
     </main>
-    <section class="contact">
+    <section class="contact" id="contact">
         <img src="assets/img/icone-localizacao.png" alt="Icone de uma aviao" class="contact__icon">
         <h3 class="contact__title">Aonde estamos</h3>
+        <div class="contact__maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.163571983137!2d-46.65694068554303!3d-23.562568067520836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8e337bb7f%3A0x53d643daf01894f5!2zRXN0YcOnw6NvIEhhY2s!5e0!3m2!1spt-BR!2sbr!4v1586113575923!5m2!1spt-BR!2sbr" width="700" height="550" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
         <p class="contact__paragraph">Avenida Paulista, 1450 - Sao Paulo, SP</p>
 
         <h4 class="contact__title__form">Fale com a gente</h4>
