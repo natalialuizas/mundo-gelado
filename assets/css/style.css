@@ -120,14 +120,13 @@ ul li {
     padding: 0 10px;
 }
 
-.destination {
+.destination--groenlandia, .destination--antartida, .destination--siberia  {
     background-color: #F8F9FA;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 12px;
-    /* width: 100%; */
     max-width: 960px;
  }
 
@@ -139,11 +138,17 @@ ul li {
      width: 100%
  }
 
+ .destination--groenlandia__img:hover, .destination--antartida__img:hover, .destination--siberia__img:hover{
+    -webkit-filter:grayscale(100%);
+    transition: 1s;
+}
+
  .destination__title {
     font-size: 1.6rem;
     font-weight: bold;
     margin-top: 40px;
     margin-bottom: 0;
+    text-align: center;
  }
 
  .destination__paragraph {
@@ -294,7 +299,7 @@ ul li {
     margin: 30px 0;
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:765px){
 
     .nav {
         background-color: #96B6CA;
@@ -341,29 +346,31 @@ ul li {
     flex-direction: column;
     }
 
-    .destination {
+    .destination--groenlandia, .destination--antartida, .destination--siberia {
+        display: flex;
         flex-direction: row;
-        margin: 0;
     }
 
-    .destination__desktop {
-    display: flex;
-    flex-direction: column;
+    .destination__title {
+        margin-top: 0;
+        text-align: left;
+        padding: 0 20px;
     }
-   
+
     .destination__paragraph{
        padding: 0;
        text-align: left;
+       padding: 5px 20px 0;
     }
 
     .destination--siberia__img {
-        width: 50%;
+        width: 70%;
         height: auto;
         display: block;
         margin-bottom: 50px;
     }
     .destination__border {
-        width: 10px;
+        width: 20px;
         height: 154px;
         background-color: #829dad;
         display: block;
@@ -374,17 +381,31 @@ ul li {
         height: 50%;
     }
 
+    .destination--groenlandia {
+        margin-bottom: 0;
+    }
+
     .destination--antartida {
      display: flex;
      flex-direction: row-reverse;
      text-align: right;
     }
     
-    .destination_paragraph--antartida{
+    .destination_paragraph--groenlandia, .destination_paragraph--antartida{
+        padding: 10px 20px;
+        display: block;
+    }
+   
+    .destination--antartida h3 {
         text-align: right;
-        padding-right: 20px;
+        padding: 5px 20px 0;
     }
 
+    .destination_paragraph--antartida{
+        text-align: right;
+    }
+
+   
     .contact{
         height: 1600px;
     }
