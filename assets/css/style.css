@@ -299,7 +299,7 @@ ul li {
     margin: 30px 0;
 }
 
-@media screen and (min-width:765px){
+@media screen and (min-width:836px){
 
     .nav {
         background-color: #96B6CA;
@@ -370,16 +370,16 @@ ul li {
         margin-bottom: 50px;
     }
     .destination__border {
-        width: 20px;
+        width: 10px;
         height: 154px;
         background-color: #829dad;
         display: block;
     }
 
-    .destination--antartida__img, .destination--groenlandia__img  {
+     .destination--antartida__img, .destination--groenlandia__img, .destination__box {
         width: 50%;
         height: 50%;
-    }
+    } 
 
     .destination--groenlandia {
         margin-bottom: 0;
@@ -403,7 +403,7 @@ ul li {
 
     .destination_paragraph--antartida{
         text-align: right;
-    }
+    } 
 
    
     .contact{
